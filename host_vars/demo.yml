@@ -1,0 +1,17 @@
+# host_vars/demo.yml  –  kleinstmögliche Demo-Konfiguration
+# ------------------------------------------------------------------------
+postgres_admin_password: "ÄNDER_MICH_pg!23"          # DB-Root
+leihs_secret_key_base:   "8246cfa62f064b5b6d68c8d3f61285fb28ed03b655348ee1a68ea007d046371dbb57ea8aa66dc9b78068e41dda0b04dcf48128fdac914e82bc6a6f5c171bd6e1%"
+leihs_root_password:     "ÄNDER_MICH_root!23"        # erster Web-Login
+
+leihs_external_hostname: "leihs.baets.ch"
+leihs_send_mails:        false                      # keine ausgehenden E-Mails
+
+db_backup_on_deploy:       false
+db_backup_nigthly_enabled:  false
+
+# --- TLS einschalten? ---------------------------------------------------
+# HTTPS erwünscht  → auskommentieren & Mail hinterlegen
+# letsencrypt_email: "admin@baets.ch"
+# leihs_https_use_letsencrypt: "Yes"   # Default ist ohnehin Yes
+# Ohne TLS bleibt alles auf http://
